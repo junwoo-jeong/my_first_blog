@@ -1,0 +1,27 @@
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+      <% for (var i = 0 ; i < result.length ; i++) { %>
+            <div class="post-preview">
+              <a href="/post/<%= result[i].bbsno %>">
+                <h2 class="post-title">
+                    <%= result[i].title %>
+                </h2>
+              </a>
+              <p class="post-meta"><%- result[i].comment %></a>
+                <%= result[i].wdate %></p>
+            </div>
+            <hr>
+        <% } %>
+
+
+      <!-- Pager -->
+      <div class="clearfix">
+        <a class="btn btn-primary float-right" href="/contents">More Posts &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>

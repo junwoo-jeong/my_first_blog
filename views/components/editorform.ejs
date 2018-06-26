@@ -1,0 +1,26 @@
+<div class="container">
+    <form method="post" id="postform">
+        <div class="form-group">
+            <select class="custom-select" id="inputGroupSelect" name="category">
+              <option selected>Category</option>
+              <option value="10">JavaScript</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          <label for="title"><strong>Title:</strong></label>
+          <input type="text" class="form-control" id="title" name="title">
+        </div>
+        <textarea name="content" id="content" rows="10" cols="80">
+        </textarea><br />
+        <input class="btn btn-primary" type="submit" name="" value="쓰기">
+        <script>
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace( 'content',{
+                filebrowserUploadUrl:'/upload',
+
+            });
+
+        </script>
+    </form>
+</div>
