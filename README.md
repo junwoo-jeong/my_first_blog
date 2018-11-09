@@ -8,4 +8,3 @@ Following technologies are used in this project (some are omitted)
 - Mysql
 - ejs(Template engine)
 - ckeditor
-- multer
